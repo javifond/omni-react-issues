@@ -1,0 +1,29 @@
+// TODO[JB]: Find out how to add this
+// common styles to the loader.
+@import '../../styles/index.scss';
+
+// Variables
+// -------------------------------------
+$border-radius: var(--gutter);
+
+// Block
+// -------------------------------------
+.issues {
+    margin: var(--space);
+
+	// Elements
+	// -------------------------------------
+	&__content {
+        border: 1px solid var(--dark);
+        border-radius: $border-radius;
+		display: flex;
+        flex-direction: column;
+        width: 100%;
+	}
+
+    &__content-header {
+        background-color: var(--grey);
+        border-bottom: 1px solid var(--dark);
+        padding: 0 var(--double-gutter);
+	}
+}

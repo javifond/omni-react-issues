@@ -1,0 +1,4 @@
+package*.json
+e2e/
+webpack.config.js
+configs/

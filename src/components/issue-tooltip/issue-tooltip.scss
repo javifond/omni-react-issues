@@ -1,0 +1,61 @@
+// TODO[JB]: Find out how to add this
+// common styles to the loader.
+@import '../../styles/index.scss';
+
+// Variables
+// -------------------------------------
+$shadow: 2px 2px 2px rgba(#000, 0.25);
+$top: -32px;
+$radius: 4px;
+$font-size-small: 12px;
+$component-min-width: 320px;
+
+// Component
+// -------------------------------------
+.tooltip-container {
+    position: relative;
+}
+
+.title {
+    color: var(--navy-blue);
+    cursor: pointer;
+
+    &:hover {
+        + .tooltip {
+            display: inline;
+        }
+    }
+}
+
+.tooltip {
+    background-color: var(--light);
+    box-shadow: $shadow;
+    border-radius: $radius;
+    min-width: $component-min-width;
+    padding: var(--double-gutter);
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 1;
+
+    &__title {
+        color: var(--navy-blue);
+    }
+
+    &__body {
+        color: var(--grey);
+        font-size: $font-size-small;
+        max-height: calc(var(--lh) * var(--max-lines));
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            background-color: var(--light);
+            content: "...";
+            padding: 0 var(--gutter);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

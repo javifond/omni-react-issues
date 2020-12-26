@@ -1,0 +1,34 @@
+// Color Palette
+// -------------------------------------------
+
+:root {
+    // Base colors
+    --primary: #282c34;
+    --light: #fff;
+    --dark: #000;
+    --grey: #919090;
+    --light-blue: #61dafb;
+    --navy-blue: #04226f;
+    --light-grey: #c1bbbb;
+    --green: rgb(81, 186, 15);
+
+    // Status
+    --error-friendly: rgb(201, 101, 38);
+
+    // App colors
+    --main-bg-color: var(--primary);
+    --home-link-color: #61dafb;
+
+    // Components
+    
+    // Inputs
+    --input-border-color: #18294d;
+    --input-color: #1c4087;
+
+    // Buttons
+    --button-bg-color: var(--primary);
+
+    // Global
+    --lh: 16px;
+    --max-lines: 3;
+}

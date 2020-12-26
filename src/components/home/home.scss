@@ -1,0 +1,42 @@
+// TODO[JB]: Find out how to add this
+// common styles to the loader.
+@import '../../styles/index.scss';
+
+// Variables
+// -------------------------------------
+$animation-duration: 20s;
+$logo-height: 40vmin;
+$font-size: 20px; 
+
+// Block
+// -------------------------------------
+.home {
+	text-align: center;
+
+	// Elements
+	// -------------------------------------
+	&__header {
+		align-items: center;
+		background-color: var(--main-bg-color);
+		color: var(--light);
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		font-size: $font-size;
+		justify-content: center;
+		padding: 0 var(--gutter);
+	}
+
+	&__logo {
+		height: $logo-height;
+		pointer-events: none;
+	
+		@media (prefers-reduced-motion: no-preference) {
+			animation: spin infinite $animation-duration linear;
+		}
+	}
+
+	&__link {
+		color: var(--home-link-color)
+	}
+}

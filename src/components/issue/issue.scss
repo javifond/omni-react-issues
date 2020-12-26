@@ -1,0 +1,70 @@
+// TODO[JB]: Find out how to add this
+// common styles to the loader.
+@import '../../styles/index.scss';
+
+// Variables
+// -------------------------------------
+$border-radius: var(--gutter);
+$font-size-small: 12px;
+$font-sze-medium: 14px;
+
+// Component
+// -------------------------------------
+.issue {
+    padding: var(--double-gutter);
+    border-bottom: 1px solid var(--dark);
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.first-row {
+    align-items: center;
+    display: flex;
+    margin-bottom: var(--gutter);
+}
+
+.icon {
+    align-items: center;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    height: var(--double-gutter);
+    margin-right: var(--gutter);
+    width: var(--double-gutter);
+
+    &::before {
+        content: 'i';
+        display: block;
+        font-size: $font-sze-medium;
+    }
+}
+
+.title {
+    color: var(--navy-blue);
+}
+
+.label {
+    background-color: var(--label-background, var(--grey));
+    border-radius: var(--gutter);
+    font-size: $font-size-small;
+    margin: 0 var(--gutter);
+    padding: var(--gutter);
+}
+
+.issue-number {
+    color: var(--light-grey);
+    font-size: $font-size-small;
+    font-weight: 700;
+    margin-right: var(--double-gutter);
+}
+
+.created-at {
+    color: var(--grey);
+    font-size: $font-size-small;
+}
